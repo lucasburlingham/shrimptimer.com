@@ -2,7 +2,7 @@
 			background-color: #d3d2ce;
 		}
 
-		@media only screen and (max-width: 600px) {
+		@media only screen and (max-width: 1080) {
 
 			.hit-time {
 				position: absolute;
