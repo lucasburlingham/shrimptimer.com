@@ -2,6 +2,19 @@
 			background-color: #d3d2ce;
 		}
 
+		@media only screen and (max-width: 600px) {
+
+			.hit-time {
+				position: absolute;
+				transform: translateX(-50%);
+				font-size: 50vw;
+				font-style: bold;
+				margin-left: 50%;
+				margin-top: auto;
+			}
+
+
+		}
 
 		.hit-time {
 			position: absolute;
