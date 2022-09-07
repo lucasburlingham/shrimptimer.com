@@ -1,98 +1,79 @@
-		body {
-			background-color: #d3d2ce;
-		}
-
-		@media only screen and (max-width: 1080) {
-
-			.hit-time {
-				position: absolute;
-				transform: translateX(-50%);
-				font-size: 50vw;
-				font-style: bold;
-				margin-left: 50%;
-				margin-top: auto;
-			}
+body {
+	background-color: #d3d2ce;
+}
 
 
-		}
-
-		.hit-time {
-			position: absolute;
-			transform: translateX(-50%);
-			font-size: 20vw;
-			font-style: bold;
-			margin-left: 50%;
-			margin-top: auto;
-		}
+.hit-time {
+	font-size: 20vw;
+	line-height: 20vw;
+	font-weight: bold;
+	margin-top: auto;
+}
 
 
-		.hit-time-title {
-			opacity: .5;
-			position: absolute;
-			transform: translateX(-50%);
-			font-style: bold;
-			font-style: italic;
-			margin-top: 2rem;
-			margin-left: 50%;
-		}
-
-		.hit-time-uniform {
-			font-style: bold;
-			font-style: italic;
-			opacity: .5;
-			position: absolute;
-			margin-left: 50%;
-			transform: translateX(-50%);
-			margin-top: 18rem;
-		}
+.hit-time-title {
+	opacity: .5;
+	font-weight: bold;
+	margin-top: 2rem;
+}
 
 
-		.circle-button-left {
-			background-color: #00843d;
-			padding: 20px;
-			position: fixed;
-			bottom: -7.5rem;
-			left: -7.5rem;
-			border-radius: 50%;
-			height: 15rem;
-			width: 15rem;
-			text-align: end;
-		}
+.hit-time-uniform {
+	opacity: .5;
+}
 
-		.circle-button-left:hover {
-			opacity: 90%;
-		}
 
-		.circle-button-text-left {
-			position: fixed;
-			bottom: .1rem;
-			left: 1rem;
-			color: #f5f5f5;
-			font-size: 80px;
-			user-select: none;
-		}
+.circle-button-left {
+	background-color: #00843d;
+	padding: 20px;
+	position: fixed;
+	bottom: -7.5rem;
+	left: -7.5rem;
+	border-radius: 50%;
+	height: 15rem;
+	width: 15rem;
+	text-align: end;
+}
 
-		.circle-button-right {
-			background-color: #ff0000;
-			padding: 20px;
-			position: fixed;
-			bottom: -7.5rem;
-			right: -7.5rem;
-			border-radius: 50%;
-			height: 15rem;
-			width: 15rem;
-			text-align: end;
-		}
+.circle-button-left:hover {
+	opacity: 90%;
+}
 
-		.circle-button-right:hover {
-			opacity: 80%;
-		}
+.circle-button-text-left {
+	position: fixed;
+	bottom: .1rem;
+	left: 1rem;
+	color: #f5f5f5;
+	font-size: 80px;
+	user-select: none;
+}
 
-		.circle-button-text-right {
-			position: fixed;
-			bottom: .1rem;
-			right: 1rem;
-			color: #F5F5F5;
-			font-size: 80px;
-			user-select: none;
-		}
+.circle-button-right {
+	background-color: #ff0000;
+	padding: 20px;
+	position: fixed;
+	bottom: -7.5rem;
+	right: -7.5rem;
+	border-radius: 50%;
+	height: 15rem;
+	width: 15rem;
+	text-align: end;
+}
+
+.circle-button-right:hover {
+	opacity: 80%;
+}
+
+.circle-button-text-right {
+	position: fixed;
+	bottom: .1rem;
+	right: 1rem;
+	color: #F5F5F5;
+	font-size: 80px;
+	user-select: none;
+}
+
+.fixed-row-bottom {
+	position: fixed;
+	bottom: 0;
+}
