@@ -2,15 +2,14 @@
 			background-color: #d3d2ce;
 		}
 
+
 		.hit-time {
 			position: absolute;
 			transform: translateX(-50%);
-			padding-bottom: 0px;
-			font-family: Roboto Monospace, monospace;
 			font-size: 15rem;
 			font-style: bold;
 			margin-left: 50%;
-			margin-top: .25rem;
+			margin-top: calc(.25rem + .2vh);
 		}
 
 
