@@ -1,27 +1,32 @@
 const timeCreated = 1662591816;
-var hitTime = 1662598800;
+var hitTime = 1662609316;
 var currentTime = Math.floor(Date.now() / 1000);
 
 
-var timer = window.setInterval(computePercentage(hitTime, timeCreated), 1000);
-
+// var timer = window.setInterval(computePercentage(hitTime, timeCreated), 1000);
+// console.log(timer);
 
 
 window.addEventListener('load', function () {
-	document.getElementById("progressbar").style.width = computePercentage(hitTime, timeCreated);
+	var timer = window.setInterval(computePercentage(hitTime, timeCreated), 1000);
+	var currentTime = Math.floor(Date.now() / 1000);
+	var percentage = Math.floor((hitTime - currentTime) / (hitTime - timeCreated) * 100) + "%";
+	console.log(percentage);
 	console.log("Width: " + document.getElementById("progressbar").style.width);
+	document.getElementById("progressbar").style.width = percentage;
+
 });
 
 
 function computePercentage(hitTime, timeCreated) {
-	var currentTime = Math.floor(Date.now() / 1000);
-	var percentage = Math.floor((hitTime - currentTime) / (hitTime - timeCreated) * 100) + "%";
-	console.log(percentage);
+
+	if (document.readyState === 'complete') {}
+
 	return percentage;
 }
 
-function endTimer(timer) {
-	clearInterval(timer);
+function endTimer() {
+	clearInterval(2);
 	console.log("Ending timer...");
 }
 
