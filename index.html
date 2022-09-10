@@ -59,16 +59,14 @@
 			</div>
 		</div>
 	</div>
-	<span class="circle-button-left">
-		<!-- Add new Hit time -->
-		<div class="circle-button-text-left" data-bs-toggle="tooltip" data-bs-placement="right"
-			title="Add next hit time">+</div>
-	</span>
+	<!-- Add new Hit time -->
+	<button class="btn circle-button-text-left" title="Add next hit time" data-bs-toggle="modal"
+		data-bs-target="#modal-form" href="#modal-form">+</button>
 	<span class="circle-button-right">
 		<!-- Stop timer -->
-		<a class="circle-button-text-right text-decoration-none" onclick="endTimer(2);">!</a>
+		<a class="circle-button-text-right text-decoration-none" id="end_button" onclick="endTimer(timer);">-</a>
 	</span>
-	<div class="container-fluid">
+	<div class=" container-fluid">
 		<div class="row">
 			<footer class="fixed-row-bottom text-center text-muted fst-italic">
 				<a class="text-decoration-none text-muted" href="https://www.youtube.com/watch?v=x6X9yPOnoVo">The
@@ -83,6 +81,76 @@
 		</div>
 
 	</div>
+
+	<div class="toast align-items-center bg-success text-bg-success" role="alert" aria-live="assertive"
+		aria-atomic="true" data-bs-delay="5000" data-bs-autohide="true" id="end_toast">
+		<div class="d-flex">
+			<div class="toast-body">
+				Timer ended.
+			</div>
+			<a type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></a>
+		</div>
+	</div>
+
+
+	<!-- Modal  -->
+
+	<div class="modal" id="modal-form" role="dialog">
+		<div class="modal-dialog modal-lg modal-dialog-centered">
+			<div class="modal-content">
+				<!-- <div class="position-flex container-fluid"> -->
+				<div class="row">
+					<div class="col-1"></div>
+					<div class="col-10">
+						<div class="hit-time-title fs-1 font-monospace text-center">
+							<input type="text" name="hit-time-title-input" id="hit-time-title-input"
+								placeholder="Lights Out" />
+						</div>
+					</div>
+					<div class="col-1">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-1"></div>
+					<div class="col-10">
+						<div class="hit-time font-monospace text-center">
+							<input type="text" name="hit-time-input" id="hit-time-input" placeholder="2100" />
+						</div>
+					</div>
+					<div class="col-1">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-1"></div>
+					<div class="col-10">
+						<div class="hit-time-uniform fs-3 font-monospace text-center">
+							<input type="text" name="hit-time-uniform-input" id="hit-time-uniform-input"
+								placeholder="Summer PT's" />
+						</div>
+					</div>
+					<div class="col-1"></div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<img style="z-index: -1; opacity: 30%; height: 20vh;"
+							class="img-fluid position-absolute top-50 start-50 translate-middle "
+							src="assets/shrimp/shrimp.webp">
+						</img>
+					</div>
+				</div>
+				<!-- </div> -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Submit</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
 	<!-- Bootstrap JavaScript Libraries -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
@@ -94,6 +162,8 @@
 			return new bootstrap.Tooltip(tooltipTriggerEl)
 		})
 	</script>
+
+
 
 </body>
 
